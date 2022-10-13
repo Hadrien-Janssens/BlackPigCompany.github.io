@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+    border: none;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 50px;
+}
+.section1 {
+    height: 670px;
+    background-size: cover;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.572);
+    display: flex;
+    flex-direction: column;  
+}
+
+.section1::after{
+    background-image: url(./img/Netflix-Background-1.jpeg);
+    position: absolute;
+    content: "";
+    background-size:cover;
+    height: 670px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.logo{
+    color: rgb(240, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.navbar button {
+    padding: 8px 12px;
+    background-color: rgb(240, 0, 0);
+    border-radius: 4px;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+select {
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    padding: 8px 12px;
+    border: solid rgb(255, 255, 255) 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center; 
+    width: 800px;
+    display: inline-block;   
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translatex(-50%) translateY(-80%);
+}
+
+.hero h1 {
+   
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    width: 600px;
+    margin: auto;
+  
+}
+
+.hero h2 {
+    margin: 20px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.hero p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.hero .cta button {
+    font-size: 25px;
+    padding: 15px;
+    background-color: rgb(224, 0, 0);
+    color: whitesmoke;
+    margin: 10px 0px;
+    cursor: pointer;
+    
+}
+.hero .cta input {
+    font-size: 25px;
+    padding: 15px;
+    margin: 10px 0px;
+    
+}
+.bande {
+    height: 9px;
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+}
+
+.section2 {
+    background-color: black;
+    height: 465px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.section2 h1 {
+    margin: 80px 80px 20px;
+
+}
+.section2 h2 {
+    color: whitesmoke;
+    font-size: 25px;
+    margin: 5px 80px;
+    font-weight: 400;
+}
+.section2 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 55px;
+   
+}
+.section2 .right {
+    width: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.section2 video {
+    position: absolute;
+    transform: translatex(-3px) translateY(-8px);
+
+}
+
+.section3 {
+    background-color: black;
+    height: 465px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.section3 h2 {
+    color: whitesmoke;
+    font-size: 25px;
+
+    font-weight: 400;
+}
+.section3 .left {
+   width: 40%;
+
+}
+
+
+.section3 img {
+    display: block;
+}
+
+.section3 .left .download {
+    display: flex;
+    height: 85px;
+    width: 330px;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    border: 2px rgb(74, 74, 74) solid;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 80px;
+    left: 170px;
+    
+    
+}
+.section3 .right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+
+
+}
+.download p:nth-child(2) {
+    color: rgb(59, 126, 219);
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.section4{
+    background-color: black;
+    height: 465px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section4 .right{
+    position: relative;
+}
+.section4 img{
+    z-index: 50;
+}
+.section4 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(105px) translateY(50px);
+    z-index: 0;
+    
+}
+
+.section4 h1 {
+    margin: 80px 80px 20px;
+
+}
+.section4 h2 {
+    color: whitesmoke;
+    font-size: 25px;
+    margin: 5px 80px;
+    font-weight: 400;
+}
+.section5{
+    background-color: black;
+    height: 465px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section5 h1 {
+    margin: 80px 80px 20px;
+
+}
+.section5 h2 {
+    color: whitesmoke;
+    font-size: 25px;
+    margin: 5px 80px;
+    font-weight: 400;
+}
+.faq{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.faq h1 {
+    margin: 80px 80px 20px;
+
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 100;
+    cursor: pointer;
+    
+}
+.question:hover{
+    background-color: rgb(224, 0, 0);
+}
+.faq .cta button {
+    font-size: 25px;
+    padding: 15px;
+    background-color: rgb(224, 0, 0);
+    color: whitesmoke;
+    margin: 10px 0px;
+    cursor: pointer;
+    
+}
+.faq .cta input {
+    font-size: 25px;
+    padding: 15px;
+    margin: 10px 0px;
+    
+}
+.footer{
+    background-color:black ;
+    color: rgb(83, 83, 83);
+}
+.tableau {
+    display: flex;
+    color: rgb(83, 83, 83);
+    background-color: black;
+    justify-content: space-around;
+
+}
