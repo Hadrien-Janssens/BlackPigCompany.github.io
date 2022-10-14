@@ -37,7 +37,7 @@ h1 {
     font-weight: 600;
 }
 h2 {
-    margin-top: 2em;
+    margin: 10%  ;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -85,7 +85,7 @@ p {
     padding: 7px;
     
 }
-.section2 {
+.section2 , .section3{
     position: relative;
 }
  .tele {
@@ -99,4 +99,22 @@ p {
     bottom: 10%;
     transform: translateY(-55px) translateX(1px);
 
+ }
+.download {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid rgb(47, 47, 47);
+    border-radius: 8px;
+
+}
+ #iphone {
+    width: 70%;
+ }
+ #st-icon {
+    height: 50px;
+ }
+ #gif {
+    height: 50px;
  }
