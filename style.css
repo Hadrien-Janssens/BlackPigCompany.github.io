@@ -176,4 +176,26 @@ p {
 }
 footer {
     color: rgb(105, 105, 105);
+    
 }
+h6 {
+    font-size: 1em;
+    margin: 20px 10px;
+    font-weight: 600;
+}
+footer p {
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+    padding: 5px 8px;
+    margin: 0;
+    font-size: 0.8em;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
