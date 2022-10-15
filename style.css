@@ -3,12 +3,12 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    text-align: center;
     color: whitesmoke;
     font-family: sans-serif;
 }
 body{
 
+    text-align: center;
     background-color: black;
 }
 button {
@@ -151,3 +151,24 @@ p {
     width: 100%;
     padding-bottom: 10%;
  }
+.div {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(38, 38, 38);
+    margin: 5px auto;
+    width: 95%;
+    text-align: left;
+}
+.faq input {
+    max-width: 320px;
+    width: 80%;
+    background-color: rgb(241, 241, 241);
+    margin: 0 auto 1em;
+    padding: 5px;
+}
+.faq button {
+    width: 100px;
+    margin: 0 auto 3rem;
+    padding: 7px;
+    
+}
