@@ -12,10 +12,11 @@ body{
     background-color: black;
 }
 button {
-    background-color: red;
+    background-color: rgb(219, 3, 3);
     border: 0px;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 4px;
+    color: whitesmoke;
 }
 .bande {
     height: 5px;
@@ -30,6 +31,11 @@ nav {
     justify-content: space-between;
     padding: 1em;
     
+}
+#langue {
+    border: 1px solid ;
+    background: none;
+    color: whitesmoke;
 }
 h1 {
     margin-top: 2em;
@@ -77,13 +83,14 @@ p {
     width: 80%;
     background-color: rgb(241, 241, 241);
     margin: 0 auto 1em;
-    padding: 5px;
+    padding: 8px 5px;
 }
 .hero button {
-    width: 100px;
+    width: auto;
     margin: 0 auto 3rem;
-    padding: 7px;
+    padding: 10px 15px;
     color: whitesmoke;
+    font-size: 1em;
     
 }
 .section2 , .section3{
@@ -98,7 +105,7 @@ p {
     width: 59%;
     left: 20%;
     bottom: 10%;
-    transform: translateY(-55px) translateX(1px);
+    transform: translateY(-52px) translateX(1px);
 
  }
  .section3{
@@ -142,8 +149,17 @@ p {
  #download {
     color: rgb(74, 74, 227);
  }
+ .section4 {
+    position: relative;
+ }
  .section4 img {
     width: 80%;
+ }
+ .section4 video {
+    width: 48%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) translateY(27%);
  }
  .section4 h2 {
     padding-top: 10%;
@@ -163,14 +179,14 @@ p {
 .faq input {
     max-width: 320px;
     width: 80%;
-    background-color: rgb(241, 241, 241);
+    background-color: whitesmoke;
     margin: 0 auto 1em;
-    padding: 5px;
+    padding: 8px 5px;
 }
 .faq button {
     width: 100px;
     margin: 0 auto 3rem;
-    padding: 7px;
+    padding: 10px 7px;
     color: whitesmoke;
     
 }
