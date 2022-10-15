@@ -3,11 +3,11 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    color: whitesmoke;
     font-family: sans-serif;
 }
 body{
 
+    color: whitesmoke;
     text-align: center;
     background-color: black;
 }
@@ -83,6 +83,7 @@ p {
     width: 100px;
     margin: 0 auto 3rem;
     padding: 7px;
+    color: whitesmoke;
     
 }
 .section2 , .section3{
@@ -170,5 +171,9 @@ p {
     width: 100px;
     margin: 0 auto 3rem;
     padding: 7px;
+    color: whitesmoke;
     
+}
+footer {
+    color: rgb(105, 105, 105);
 }
