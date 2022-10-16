@@ -11,6 +11,9 @@ body{
     text-align: center;
     background-color: black;
 }
+a {
+    color: whitesmoke;
+}
 button {
     background-color: rgb(219, 3, 3);
     border: 0px;
