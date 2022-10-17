@@ -13,6 +13,8 @@ body{
 }
 a {
     color: whitesmoke;
+    font-size: 1.3em;
+    
 }
 button {
     background-color: rgb(219, 3, 3);
@@ -20,7 +22,11 @@ button {
     padding: 5px;
     border-radius: 4px;
     color: whitesmoke;
+   
+   
+    
 }
+
 .bande {
     height: 5px;
     width: 100%;
@@ -39,6 +45,9 @@ nav {
     border: 1px solid ;
     background: none;
     color: whitesmoke;
+    appearance: none;
+    padding-left: 15px;
+    
 }
 h1 {
     margin-top: 2em;
@@ -135,22 +144,22 @@ p {
     padding: 0;
     margin: 0;
     text-align: left;
-    font-size: 1em;
+    font-size: 0.73em;
 }
  #iphone {
     width: 90%;
     padding-bottom: 50px;
  }
  #st-icon {
-    height: 60px;
+    height: 40px;
     padding-right: 10px;
  }
  #gif {
-    height: 60px;
+    height: 50px;
     
  }
  #download {
-    color: rgb(74, 74, 227);
+    color: rgb(43, 120, 255);
  }
  .section4 {
     position: relative;
@@ -232,5 +241,10 @@ footer p {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+}
+.end {
+  
+    padding-top: 30px;
+    
 }
 
