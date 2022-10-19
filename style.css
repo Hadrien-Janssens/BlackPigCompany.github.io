@@ -69,6 +69,8 @@ p {
 .hero {
     display: flex;
     flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
 }
  .section1  {
     background-image: url(./img/Netflix-Background-1.jpeg);
@@ -107,23 +109,28 @@ p {
 }
 .section2 , .section3{
     position: relative;
+    max-width: 600px;
+    margin: 0 auto;
 }
+
  .tele {
-    width: 80%;
-    margin-bottom: 10%;
+    width: 79%;
+   
  }
  .video {
     position: absolute;
-    width: 59%;
-    left: 20%;
-    bottom: 10%;
-    transform: translateY(-52px) translateX(1px);
+    width: 58%;
+    left: 50%;
+    transform: translateY(37.5%) translateX(-50.5%);
 
  }
  .section3{
     position: relative;
+    max-width: 600px;
+    margin: 0 auto;
  }
 .download {
+    max-width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,6 +155,7 @@ p {
 }
  #iphone {
     width: 90%;
+    max-width: 500px;
     padding-bottom: 50px;
  }
  #st-icon {
@@ -163,6 +171,8 @@ p {
  }
  .section4 {
     position: relative;
+    max-width: 600px;
+    margin: 0 auto;
  }
  .section4 img {
     width: 80%;
@@ -176,9 +186,14 @@ p {
  .section4 h2 {
     padding-top: 10%;
  }
+ .section5 {
+    max-width: 700px;
+    margin: 0 auto;
+ }
  .section5 img {
     width: 100%;
     padding-bottom: 10%;
+    
  }
 .question {
     display: flex;
@@ -203,6 +218,10 @@ p {
 .answervisible a {
     margin: 1rem 2rem;
     text-decoration: underline;
+}
+.faq {
+    max-width: 700px;
+    margin: 0 auto;
 }
 .faq input {
     max-width: 320px;
