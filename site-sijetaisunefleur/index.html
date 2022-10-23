@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si j'étais une fleur...</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/locomotive-scroll.css">
+</head>
+<body >
+    <div data-scroll-container>
+    <div data-scroll-section class="section1">
+        <div class="hero">
+            <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="1" >Si j'étais une <br>   fleur...</h1>
+            <ul data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">
+                <li>home</li>
+                <li>à propos</li>
+                <li>gallerie</li>
+                <li>contact</li>
+            </ul>
+        </div>
+        
+
+        <div class="content1">
+            <p data-scroll data-scroll-speed ="-3" data-scroll-direction="horizontal" class="appear">Des fleurs, plantes </p>
+            <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">Et articles déco</p>  
+            <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-4">pour toutes vos occasions</p>
+            
+            <button class="bn1">Book now</button>
+            <button class="bn2">Buy now</button>
+            <img data-scroll data-scroll-speed="-2" src="./img/plante/plante2.png" alt="" >
+
+
+            <div class="footer">
+                <p>Rue de l'Espinette 61 - 7160 Godarville</p>
+            </div>
+        </div>
+    </div>
+    <div data-scroll-section class="section2">
+       
+        <ul>
+            <li>home</li>
+            <li>à propos</li>
+            <li>gallerie</li>
+            <li>contact</li>
+        </ul>
+        <div class="container">
+
+            <div class="left">
+                <img src="./img/plante/images3.jpeg" >
+            </div>
+            <div class="right">
+                <h1>Contactez-nous pour vos demandes personnalisées</h1>
+                <div class="content1">
+                    <p>Un événement, un cadeau, une occasion particulière ? Nous sommes là pour vous conseiller et mettrons tout en oeuvre pour personnaliser nos créations en fonction de vos souhaits.
+                    </p>       
+                </div>
+            </div>
+        
+       
+            <div class="footer">
+                <p>Rue de l'Espinette 61 - 7160 Godarville</p>
+            </div>
+        </div>
+    </div>
+    <div data-scroll-section class="section3">
+        <div class="hero">
+            <h1>Si j'étais une <br>   fleur...</h1>
+            <ul>
+                <li>home</li>
+                <li>à propos</li>
+                <li>gallerie</li>
+                <li>contact</li>
+            </ul>
+        </div>
+        
+
+        <div class="content1">
+            <p>Des fleurs, plantes <br>
+                et articles déco <br>
+                pour toutes vos occasions</p>
+            
+            <button class="bn1">Book now</button>
+            <button class="bn2">Buy now</button>
+            <img src="./img/plante/plante2.png" alt="" >
+
+
+            <div class="footer">
+                <p>Rue de l'Espinette 61 - 7160 Godarville</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="./javascript/locomotive-scroll.min.js"></script>
+<script>
+   const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    tablet:{smooth: true} ,
+    smartphone:{smooth: true} ,
+});
+</script>
+
+</body>
+</html>
