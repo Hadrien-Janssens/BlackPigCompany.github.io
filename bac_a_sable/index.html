@@ -15,7 +15,7 @@
     <div class="input">
         <p>Ecris ton mot, pour savoir si c'est un palindrome</p>
         <input type="text" id="input-palindrome">
-        <button id="validation">Valider ton mot petite pute à click</button>
+        <button id="validation">Valide ton mot </button>
     </div>
     <div class="result">
         <p id="result-txt"> </p>
@@ -37,7 +37,7 @@
 function compare (string) {
     string = string.toUpperCase();
     if(string==reverseString(string)){
-        resultTxt.innerText = 'Bien joué FDP';
+        resultTxt.innerText = 'Bien joué ';
     }else   resultTxt.innerText ="C'est raté mon gars ";
 }
 
