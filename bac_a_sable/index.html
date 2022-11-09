@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+            <h1> Vérifier si un mot est un palindrome</h1>
+    </div>
+    <div class="input">
+        <p>Ecris ton mot, pour savoir si c'est un palindrome</p>
+        <input type="text" id="input-palindrome">
+        <button id="validation">Valider ton mot petite pute à click</button>
+    </div>
+    <div class="result">
+        <p id="result-txt"> </p>
+    </div>
+
+    <script>
+
+ let chaine = 0;
+ const resultTxt =document.getElementById('result-txt');
+
+ function reverseString (string) {
+   string = string
+   .toUpperCase()
+   .split('')
+   .reverse()
+   .join('');
+   return string
+}
+function compare (string) {
+    string = string.toUpperCase();
+    if(string==reverseString(string)){
+        resultTxt.innerText = 'Bien joué FDP';
+    }else   resultTxt.innerText ="C'est raté mon gars ";
+}
+
+//compare(chaine);
+
+const inputPalindrome =document
+.getElementById('input-palindrome')
+.addEventListener('input',function(e) {
+    chaine = e.target.value;
+});
+
+
+const validation = document
+.getElementById('validation')
+.addEventListener('click', ()=>{
+    compare(chaine);
+
+});
+
+    
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>
