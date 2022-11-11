@@ -35,7 +35,7 @@ a:hover {
     
     
 }
-.content::after {
+/*.content::before {
     content: "";
     position: absolute;
     top: 0;
@@ -45,6 +45,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.837);
     z-index: -1;
 }
+*/
 
 .card {
     -webkit-backdrop-filter: blur(6px);
@@ -90,7 +91,6 @@ img {
     
 }
 button {
-    margin-top: 20px;
     padding: 15px;
     border-radius: 10px;
     border: none;
@@ -98,18 +98,13 @@ button {
     font-size: 20px;
     background: linear-gradient(to left , rgb(226, 60, 0),rgb(219, 15, 0));
     color: white;
-    position: absolute;
-    bottom: 10px;
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
 }
-.lien button a:hover {
+.lien a button:hover {
     color: black;
 }
 .projet {
     width: 100%;
-    background-color: rgb(13, 3, 22);
+    background-image: linear-gradient(to right top, #320fd8, #5803c3, #6901af, #73089d, #77148c);
     color: white;
     position: relative;
     padding: 0px;
@@ -173,7 +168,7 @@ h3 {
     margin: 20px auto;
     -webkit-backdrop-filter: blur(6px);
     background-color: rgba(255, 255, 255, 0.152);
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
     padding: 40px 0;
     text-align: center;
@@ -182,10 +177,17 @@ h3 {
     border-left: solid 1px white;
     overflow-wrap: break-word;
     position: relative;
-    height: 150px;
-    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
     
    
+}
+.projet-name {
+    
+    
 }
 
 
