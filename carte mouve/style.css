@@ -22,4 +22,39 @@ body{
     text-align: center;
     height: 90%;
     font-family: sans-serif;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right top, #185780, #007ba3, #00a1bc, #00c6c7, #12ebc5);
+    z-index: 0;
+    position: absolute;
+}
+.img img{
+    width: 7rem;
+    padding: 50px 0px;
+    z-index: 14;
+    
+}
+h1 {
+    color: #495b60;
+}
+button {
+    color: #495b60;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.4)
+}
+button.active{
+    background-color: rgb(229, 16, 16);
+    color: white;
 }
