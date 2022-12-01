@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEST PLU</h1>
+    <p id="result"></p>
+    <button id="button-validation">valider mes Réponses</button>
+    <script >
+
+        let result=document.getElementById('result');
+        
+        
+        
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        };
+        
+        
+        fetch('http://localhost:3000/api/produit')
+        .then(function(res) {
+            return res.json()
+        })
+        .then (function(value){
+            let i = value.articles.length;
+            for (let j = 0; j < 10; j++) {
+            
+            const newArticle = document.createElement("p");
+            var newInput = document.createElement("input");
+            let x =getRandomInt(i);
+            newArticle.innerText = "article : " +value.articles[x].title ;
+            newArticle.id = value.articles[x].title;
+            newInput.id=value.articles[x].plu
+            newInput.className="plu";
+            
+            result.appendChild(newArticle);
+            result.appendChild(newInput);
+        };
+            let buttonValidation = document.getElementById('button-validation');
+            let score = 0;
+            
+             buttonValidation.addEventListener('click', ()=>{
+            
+            //console.log(newInput.value);
+                const input = document.getElementsByClassName('plu');
+                
+                for (let j = 0; j < 10; j++) {
+                    
+                    //console.log(input[j].id);
+                    
+                    //console.log(input[j].value);
+                    if ( input[j].id == input[j].value){
+                        console.log('bravo');
+                        score++;
+                    }else {
+                        console.log('raté');
+                    }
+                   console.log(score);
+                  
+                };
+                const scoreShow = document.createElement('p');
+                   scoreShow.innerText =`ton score est de ${score}/10`;
+                   result.appendChild(scoreShow);
+                
+            });
+                
+           // let buttonValidation=document.createElement('button');
+            //buttonValidation.innerText='valider les réponses'
+            //result.appendChild(buttonValidation);
+       
+    })
+    .catch(function(err){});
+   
+    function validation (){
+
+    };
+   
+
+
+    </script>
+
+</body>
+</html>
