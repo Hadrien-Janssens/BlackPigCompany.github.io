@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>TEST PLU</h1>
-    <p id="result"></p>
-    <button id="button-validation">valider mes Réponses</button>
+    <div class="container">
+        <div class="card">
+            <div id="result"></div> 
+           </div>
+           <button id="button-validation">valider mes Réponses</button>
+    </div>
     <script >
 
         let result=document.getElementById('result');
@@ -29,7 +34,7 @@
             let i = value.articles.length;
             for (let j = 0; j < 10; j++) {
             
-            const newArticle = document.createElement("p");
+            const newArticle = document.createElement("div");
             var newInput = document.createElement("input");
             let x =getRandomInt(i);
             newArticle.innerText = "article : " +value.articles[x].title ;
@@ -42,22 +47,19 @@
         };
             let buttonValidation = document.getElementById('button-validation');
             let score = 0;
-            
+
              buttonValidation.addEventListener('click', ()=>{
             
-            //console.log(newInput.value);
                 const input = document.getElementsByClassName('plu');
                 
                 for (let j = 0; j < 10; j++) {
-                    
-                    //console.log(input[j].id);
-                    
-                    //console.log(input[j].value);
+                 
                     if ( input[j].id == input[j].value){
                         console.log('bravo');
                         score++;
                     }else {
                         console.log('raté');
+                        input[j].style.backgroundColor = "red";
                     }
                    console.log(score);
                   
@@ -66,20 +68,10 @@
                    scoreShow.innerText =`ton score est de ${score}/10`;
                    result.appendChild(scoreShow);
                 
-            });
-                
-           // let buttonValidation=document.createElement('button');
-            //buttonValidation.innerText='valider les réponses'
-            //result.appendChild(buttonValidation);
+            }); 
        
     })
     .catch(function(err){});
-   
-    function validation (){
-
-    };
-   
-
 
     </script>
 
