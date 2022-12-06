@@ -11,13 +11,18 @@
     <h1>Liste des produits</h1>
     <div class="container">
         <div class="card">
+            <p>Créer un article</p>
             <input type="text" name="" id="name">
             <label for="name">nom</label>
             <input type="text" id="plu">
             <label for="plu">PLU</label>
             <button id="buttonValider">valider</button>
         </div>
-        <p id="result"></p>
+            
+            <div class="card" id="result">
+            
+            
+        </div>
     </div>
     <script>
         const buttonValider = document.getElementById('buttonValider');
@@ -56,6 +61,7 @@
         for (let i = 0; i < value.articles.length; i++) {
             let id = value.articles[i]._id
             let result=document.getElementById('result');
+            let newCard = document.createElement('div')
             let newArticle = document.createElement("p");
             let buttonSupprimer = document.createElement('button');
             buttonSupprimer.addEventListener("click",()=>{
@@ -80,9 +86,11 @@
             newArticle.innerText = value.articles[i].title;
             buttonModifier.innerText ='modifier'
             buttonSupprimer.innerText = 'supprimer';
-            result.appendChild(newArticle);
-            result.appendChild(buttonModifier);
-            result.appendChild(buttonSupprimer);
+            newCard.classList.add('card');
+            result.appendChild(newCard);
+            newCard.appendChild(newArticle);
+            newCard.appendChild(buttonModifier);
+            newCard.appendChild(buttonSupprimer);
          
         };
     })
