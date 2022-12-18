@@ -29,7 +29,7 @@
         const title = document.getElementById('name');
         const plu = document.getElementById('plu');
         buttonValider.addEventListener('click', ()=>{
-            fetch(`http://localhost:3000/api/produit/`,
+            fetch(`http://www.portfolio-hadrien.com/backend/produit/`,
 {
     headers: {
       'Accept': 'application/json',
@@ -50,7 +50,7 @@
 
 
 
-        fetch('http://localhost:3000/api/produit')
+        fetch('http://www.portfolio-hadrien.com/backend/produit')
     .then(function(res) {
         return res.json()
     })
@@ -65,7 +65,7 @@
             let newArticle = document.createElement("p");
             let buttonSupprimer = document.createElement('button');
             buttonSupprimer.addEventListener("click",()=>{
-                fetch(`http://localhost:3000/api/produit/${id}`,
+                fetch(`http://www.portfolio-hadrien.com/backend/produit/${id}`,
 {
     headers: {
       'Accept': 'application/json',
