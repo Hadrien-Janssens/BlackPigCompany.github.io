@@ -15,8 +15,8 @@ inscriptionButton.addEventListener('click',()=>{
         
     })
     .then(function(res){
-        //window.location.reload();
         console.log(res);
+        window.location.href ='http://127.0.0.1:5501/frontend/home.html';
         
     })
     .catch(function(res){ console.log(res) });

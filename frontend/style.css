@@ -3,6 +3,12 @@
     padding: 0;
     margin: 0;
 }
+#menu-hamburger {
+   width: 25px;
+   margin: 10px;
+   font-weight: bolder;
+
+}
 a {
    cursor: pointer;
 }
@@ -88,6 +94,7 @@ h1 {
     border: none;
     padding: 10px 30px;
     min-width: 90%;
+    margin: 5px 0px;
 
  }
  button:hover{

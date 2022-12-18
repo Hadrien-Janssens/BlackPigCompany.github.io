@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1>TEST PLU</h1>
-    <div class="container">
-        <div class="card">
+    <div class="container" id="container" >
+        <div class="card" id="card">
             <div id="resultat"></div> 
            </div>
            <button id="button-validation">valider mes Réponses</button>
@@ -26,7 +26,7 @@
         };
         
         
-        fetch('http://localhost:3000/api/produit')
+        fetch('http://www.portfolio-hadrien.com/backend/produit')
         .then(function(res) {
             return res.json()
         })
@@ -36,14 +36,18 @@
             
             const newArticle = document.createElement("div");
             var newInput = document.createElement("input");
+            var newLabel = document.createElement('p')
             let x =getRandomInt(i);
             newArticle.innerText = "article : " +value.articles[x].title ;
             newArticle.id = value.articles[x].title;
             newInput.id=value.articles[x].plu
             newInput.className="plu";
+            newLabel.innerText=value.articles[x].plu
             
             result.appendChild(newArticle);
             result.appendChild(newInput);
+            result.appendChild(newLabel);
+            newLabel.style.display='none';
         };
             let buttonValidation = document.getElementById('button-validation');
             let score = 0;
@@ -51,7 +55,7 @@
              buttonValidation.addEventListener('click', ()=>{
             
                 const input = document.getElementsByClassName('plu');
-                
+                const label = document.getElementsByTagName('p');
                 for (let j = 0; j < 10; j++) {
                  
                     if ( input[j].id == input[j].value){
@@ -60,6 +64,9 @@
                     }else {
                         console.log('raté');
                         input[j].style.backgroundColor = "red";
+                        label[j].style.display='block';
+                        
+                        
                     }
                    console.log(score);
                   
@@ -67,6 +74,21 @@
                 const scoreShow = document.createElement('p');
                    scoreShow.innerText =`ton score est de ${score}/10`;
                    result.appendChild(scoreShow);
+                   const container= document.getElementById('container');
+                   var buttonRetour = document.createElement('button');
+                   buttonRetour.innerText= "Retour à l'acceuil";
+                   buttonRetour.addEventListener('click',()=>{
+                    window.location.href ='http://www.blackpigcompany.github.io/frontend/home.html';
+                   })
+
+                   container.replaceChild(buttonRetour,buttonValidation);
+                   var buttonRetry = document.createElement('button');
+                   buttonRetry.innerText="refaire un test";
+                   container.appendChild(buttonRetry);
+                   buttonRetry.addEventListener('click', ()=>{
+                    window.location.reload();
+                   });
+
                 
             }); 
        
