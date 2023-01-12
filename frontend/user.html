@@ -14,7 +14,7 @@
 
     </div>
     <script>
-           fetch('http://www.portfolio-hadrien.com/backend/auth')
+           fetch('https://www.portfolio-hadrien.com/backend/auth')
     .then(function(res) {
         return res.json()
     })
@@ -27,7 +27,7 @@
             let newUser = document.createElement("p");
             let buttonSupprimer = document.createElement('button');
             buttonSupprimer.addEventListener("click",()=>{
-                fetch(`http://www.portfolio-hadrien.com/backend/auth/${id}`,
+                fetch(`https://www.portfolio-hadrien.com/backend/auth/${id}`,
 {
     headers: {
       'Accept': 'application/json',

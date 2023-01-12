@@ -20,7 +20,7 @@
         let result=document.getElementById('resultat');
         
         
-        
+        // trouve un nombre aleatoir avec un maximum en parametre
         function getRandomInt(max) {
             return Math.floor(Math.random() * max);
         };
@@ -30,6 +30,7 @@
         .then(function(res) {
             return res.json()
         })
+        
         .then (function(value){
             let i = value.articles.length;
             for (let j = 0; j < 10; j++) {
